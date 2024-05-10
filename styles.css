@@ -112,6 +112,7 @@ section p {
 .social-links img {
     width: 40px;
     height: auto;
+    border-radius: 20%;
 }
 
 #scrollToTopBtn {
