@@ -14,7 +14,7 @@
     }
 
 // Set the scroll behavior to smooth
-window.scrollTo({
+window.scrollToTop({
   top: 0,
   behavior: 'smooth'
  });
