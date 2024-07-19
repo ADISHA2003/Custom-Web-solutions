@@ -117,7 +117,7 @@ section p {
 
 #scrollToTopBtn {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #007bff;
