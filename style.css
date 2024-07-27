@@ -1,0 +1,409 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#home .hero {
+    background: url('https://www.freewebheaders.com/wp-content/gallery/high-tech-hero-headers/hi-tech-concepts-on-blue-background-hero-header.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home .hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#home .hero p {
+    font-size: 1.5rem;
+}
+
+#home .hero .btn {
+    background: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#home .hero .btn:hover {
+    background: #e67e22;
+}
+
+/* About Section */
+#about {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#about .about-logo {
+    display: block;
+    max-width: 150px;
+    margin: 20px auto;
+    border-radius: 0px;
+}
+
+#about h2, #portfolio h2, #services h2, #testimonials h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+#about .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between skills */
+}
+
+#about .skills-list li {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 150px; /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#about .skills-list li:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+#about .skills-list i {
+    font-size: 2rem; /* Adjust icon size */
+    color: #f39c12; /* Icon color */
+    display: block;
+    margin-bottom: 10px;
+}
+
+#about .skills-list li {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Portfolio Section */
+#portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#portfolio .project {
+    background: #fff;
+    margin: 10px;
+    flex: 1 1 calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+#portfolio .project img {
+    width: 100%;
+    height: auto;
+}
+
+#portfolio .project:hover {
+    transform: scale(1.05);
+}
+
+#portfolio .project h3 {
+    margin: 10px 0;
+}
+
+#portfolio .project p {
+    padding: 0 10px 10px;
+}
+
+#portfolio .project .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#portfolio .project .btn:hover {
+    background: #555;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background: #fff;
+}
+
+#services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#services .service {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 calc(33% - 40px); /* Adjust for responsive layout */
+}
+
+#services .service i {
+    font-size: 2.5rem;
+    color: #f39c12; /* Icon color */
+    margin-bottom: 15px;
+}
+
+#services .service h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#services .service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+#testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#testimonials .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#testimonials .testimonial {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#testimonials .testimonial p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#testimonials .testimonial h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#contact .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#contact .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f39c12;
+    text-decoration: none;
+    border-radius: 0px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    transition: background-color 0s ease, transform 0.3s ease;
+}
+
+#contact .btn:hover {
+    background-color: #e67e22; /* Darker shade for hover */
+    transform: translateY(0px);
+}
+
+#contact .btn:active {
+    background-color: #e67e22; /* Even darker shade for active state */
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer .social a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .projects, .service, .testimonial, #contact form {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #portfolio .project, #services .service, #testimonials .testimonial {
+        flex: 1 1 100%;
+    }
+}
