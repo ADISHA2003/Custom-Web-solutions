@@ -300,6 +300,92 @@ nav {
     color: #333;
 }
 
+/* Plans Section */
+#plans {
+    padding: 50px 0;
+    background: #fff;
+}
+
+#plans .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#plans h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.plan-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.plan {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.plan .price {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.plan .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f39c12; /* Primary color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.plan .btn:hover {
+    background-color: #e67e22; /* Hover color */
+    /*transform: translateY(-5px);*/
+}
+
+@media (max-width: 768px) {
+    .plan-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        flex: 1 1 100%;
+    }
+}
+
 /* Contact Section */
 #contact {
     padding: 50px 0;
