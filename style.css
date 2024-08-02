@@ -471,7 +471,7 @@ footer .social a:hover {
 
     .nav-links.active {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .nav-links li {
