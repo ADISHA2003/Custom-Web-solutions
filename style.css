@@ -1,9 +1,11 @@
 /* General Styles */
-body {
+body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     line-height: 1.6;
     color: #333;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 a {
@@ -20,9 +22,14 @@ a {
 
 /* Header */
 header {
-    background: #333;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5); /* Lighter transparent color for glass effect */
+    backdrop-filter: blur(10px); /* Blurs the background behind the header */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
     color: #fff;
-    padding: 5px 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
 nav {
@@ -101,7 +108,7 @@ nav {
     display: block;
     max-width: 150px;
     margin: 20px auto;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 #about h2, #portfolio h2, #services h2, #testimonials h2, #contact h2 {
@@ -135,12 +142,26 @@ nav {
     transition: transform 0.3s ease;
 }
 
+@media  screen and (max-width: 768px) {
+    #about .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #about .skills-list li {
+        width: 125px;
+    }
+}
+
 #about .skills-list li:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 #about .skills-list i {
-    font-size: 2rem; /* Adjust icon size */
+    font-size: 2.5rem; /* Adjust icon size */
     color: #f39c12; /* Icon color */
     display: block;
     margin-bottom: 10px;
@@ -162,14 +183,16 @@ nav {
     background: #fff;
     margin: 10px;
     flex: 1 1 calc(33% - 40px);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     transition: transform 0.3s;
     text-align: center;
+    border-radius: 10px;
 }
 
 #portfolio .project img {
     width: 100%;
     height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
 #portfolio .project:hover {
@@ -224,7 +247,7 @@ nav {
 #services .service {
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
     margin: 20px;
@@ -328,10 +351,10 @@ nav {
 .plan {
     background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     flex: 1;
     margin: 20px;
-    padding: 20px;
+    padding: 20px 30px;
     text-align: center;
 }
 
