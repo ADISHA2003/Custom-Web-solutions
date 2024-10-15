@@ -192,8 +192,26 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Feel free to reach out to discuss your project or ask any questions.</p>
+            <form onsubmit="submitForm(event)">
+                <input type="text" placeholder="Name" required />
+                <!-- <label for="gender">Gender <strong>:</strong></label> -->
+                <!-- <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div> -->
+                <input type="tel" placeholder="Mobile No." required maxlength="10" pattern="[0-9]{10}" />
+                <input type="email" placeholder="Email" required />
+                <!-- <label for="appointment-date">Appointment Date</label> -->
+                <!-- <input type="date" id="appointment-date" name="appointment-date"> -->
+                <textarea placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p><strong>OR</strong></p>
             <p><i class="fa-solid fa-mobile-alt" style="color: #000; font-size: 1.5em;"></i><a href="tel:+91 9289665096" style="color: #000;"> +91 9289665096</a></p>
-            <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLSfWbiT8pq1sPV9_4-p429KkKK55gDXEBK7WbRQMKTY7-TS5nA/viewform" class="btn" target="_blank">Fill Out Our Form</a>-->
         </div>
     </section>
 

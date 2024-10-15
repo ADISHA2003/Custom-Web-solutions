@@ -62,6 +62,9 @@ nav {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px
 }
 
 /* Hero Section */
@@ -420,6 +423,9 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact h2 {
@@ -454,6 +460,133 @@ nav {
 #contact .btn:active {
     background-color: #e67e22; /* Even darker shade for active state */
     transform: translateY(0);
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container form input, .container form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+}
+
+.container form input:focus, .container form textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+.container form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12;
+    color: white;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container form button:hover {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container form .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.container form .success {
+    color: green;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.container form .submit-button {
+    width: 10
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+.popup h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup input, .popup textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+}
+
+.popup input:focus, .popup textarea:focus {
+    outline: none;
+    border-color: black;
+}
+
+.popup button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
