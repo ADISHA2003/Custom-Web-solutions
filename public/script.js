@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to update the visitor count
   function updateVisitorCount() {
-    fetch('update_counter.php')
+    fetch('/api/count')
       .then(response => response.text())
       .then(count => {
         // Assuming you have an element with the ID "visitor-count"
