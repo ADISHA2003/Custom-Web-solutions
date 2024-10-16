@@ -1,7 +1,7 @@
 const fs = require('fs').promises; // Use promises for easier async/await
 const lockfile = require('proper-lockfile');
 
-const counterFile = 'counter.txt'; // Path relative to this function file
+const counterFile = path.join('/tmp', 'counter.txt');
 
 export default async function handler(req, res) {
   try {

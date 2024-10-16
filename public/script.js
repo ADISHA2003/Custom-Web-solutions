@@ -15,18 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Function to update the visitor count
-  function updateVisitorCount() {
-    fetch('/api/count')
-      .then(response => response.text())
-      .then(count => {
-        // Assuming you have an element with the ID "visitor-count"
-        document.getElementById('visitor-count').textContent = count;
-      });
-  }
+  // // Function to update the visitor count
+  // function updateVisitorCount() {
+  //   console.log('Updating visitor count...');
+  //   fetch('/api/count')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // Extract the visitorCount value from the JSON response
+  //       document.getElementById('visitor-count').textContent = data.visitorCount; 
+  //     });
+  // }
 
-  // Call the function to initially display the count
-  updateVisitorCount();
+  // // Call the function to initially display the count
+  // updateVisitorCount();
 });
 
 function submitForm(event) {
