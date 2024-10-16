@@ -15,31 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Function to update the visitor count (fetch the initial count)
+  // Function to update the visitor count
   function updateVisitorCount() {
     fetch('/api/count')
       .then(response => response.json())
       .then(data => {
-        document.getElementById('visitor-count').textContent = data.visitorCount;
+        // Extract the visitorCount value from the JSON response
+        document.getElementById('visitor-count').textContent = data.visitorCount; 
       });
   }
 
-  // Function to increment the count (call this on page load or other events)
-  function incrementVisitorCount() {
-    fetch('/api/count', { method: 'POST' })
-      .then(() => {
-        // Update the displayed count after incrementing
-        updateVisitorCount();
-      });
-  }
-
-  // Call the functions appropriately:
-  
-  // Get the initial count on page load
+  // Call the function to initially display the count
   updateVisitorCount();
-
-  // Increment the count on page load (if you want to count every page view)
-  incrementVisitorCount();
 });
 
 function submitForm(event) {
