@@ -14,19 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.add('fa-bars');
         }
     });
-
-  // Function to update the visitor count
-  function updateVisitorCount() {
-    fetch('/api/count')
-      .then(response => response.json())
-      .then(data => {
-        // Extract the visitorCount value from the JSON response
-        document.getElementById('visitor-count').textContent = data.visitorCount; 
-      });
-  }
-
-  // Call the function to initially display the count
-  updateVisitorCount();
 });
 
 function submitForm(event) {

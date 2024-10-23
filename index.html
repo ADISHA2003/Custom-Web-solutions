@@ -232,13 +232,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Fetch the visitor count when the page loads
-        fetch('/api/count')
-          .then(response => response.json())
-          .then(data => {
-            document.getElementById('visitor-count').textContent = data.visitorCount;
-          });
-    </script>
 </body>
 </html>
