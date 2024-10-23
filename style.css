@@ -84,8 +84,20 @@ nav {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    #home .hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
 #home .hero p {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    #home .hero p {
+        font-size: 1.5rem;
+    }
 }
 
 #home .hero .btn {
@@ -410,6 +422,12 @@ nav {
     .plan {
         flex: 1 1 100%;
     }
+
+    .plan .price {
+        font-size: 1.5rem;
+        color: #f39c12;
+        margin-bottom: 20px;
+    }
 }
 
 /* Contact Section */
@@ -590,6 +608,10 @@ input[type="radio"] {
 }
 
 @media (max-width: 768px) {
+    #contact .container{
+        max-width: 250px;
+    }
+
     #contact h2 {
         font-size: 2rem;
     }
